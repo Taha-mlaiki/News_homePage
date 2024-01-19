@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family: 'Inter', sans-serif;
+}
+
+nav .navLinks li a {
+  @apply hover:text-soft_orange transition duration-200 font-medium text-darkGrBlue
+}
+nav .navLinks li  {
+  margin-left:20px;
+}
+header .mob_menu {
+  position: absolute;
+  height: 100vh;
+  background-color: white;
+  right:0;
+  z-index: 333;
+  top:0;
+}
+header .mob_menu img {
+  position: absolute;
+  right:30px;
+  top:30px;
+}
+header .mob_menu ul li {
+  padding:15px;
+  @apply text-darkGrBlue hover:text-soft_orange
+}
